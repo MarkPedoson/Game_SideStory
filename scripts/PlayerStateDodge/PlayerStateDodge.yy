@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Player Scripts/Player States.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerStateRunning",
+  "name": "PlayerStateDodge",
   "tags": [],
   "resourceType": "GMScript",
 }

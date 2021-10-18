@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Player States",
-    "path": "folders/Scripts/Player Scripts/Player States.yy",
+    "name": "Player Scripts",
+    "path": "folders/Scripts/Player Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerStateRunning",
+  "name": "PlayerInputDodge",
   "tags": [],
   "resourceType": "GMScript",
 }

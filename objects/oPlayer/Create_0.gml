@@ -17,17 +17,20 @@ grav_current = grav_down; //Gravity value put here
 grav_high = 5; //Gravity limit both up and down
 grav_low = -5;
 runsp = 0; //How fast moving, but in alarm[0] is changed to the actual one
+dodgesp = 4;
+dodgedist = 100;
 
 
 //Scripts
 playerCharScript[PLAYERSTATE.HUB] = -1;
 playerCharScript[PLAYERSTATE.STARTING] = PlayerStateStarting;
 playerCharScript[PLAYERSTATE.RUNNING] = PlayerStateRunning;
-playerCharScript[PLAYERSTATE.JUMPING] = -1;
+playerCharScript[PLAYERSTATE.JUMPING] = PlayerStateJumping;
 playerCharScript[PLAYERSTATE.LOCKED] = -1;
-playerCharScript[PLAYERSTATE.SWITCHING] = -1;
+playerCharScript[PLAYERSTATE.DODGE] = PlayerStateDodge;
 
 //Skins
 spriteRun = sCerberusRun;
 spriteIdle = sCerberusIdle;
-//spriteJump = sCerberusJump;
+spriteJump = sCerberusJump;
+spriteDodge = sCerberusDodge;

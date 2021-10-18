@@ -3,6 +3,11 @@
 function PlayerStateStarting(){
 	sprite_index = spriteIdle;
 	image_speed = 0.5;
+	
+	//Collision
+	PlayerCollision();
+	
+	//Set alarms for the game to start
 	if (!alarm[0]) alarm[0] = 180;
 	if (!oChasee.alarm[0]) oChasee.alarm[0] = 180;
 	
