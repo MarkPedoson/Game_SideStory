@@ -3,23 +3,34 @@
 //Attr
 state = PLAYERSTATE.STARTING;
 lastState = state;
+canRun = false;
 image_speed = 0;
 
 //Movement speeds up and down
 hsp = 0;
 vsp = 0;
+
 //Gravity both up and down
 grav_down = 0.4;
 grav_up = -0.4;
+
 //Bunch of helpers and regulators
 grav_prev = 1; //Positive value rather than value itself used as true or false
 grav_current = grav_down; //Gravity value put here
 grav_high = 5; //Gravity limit both up and down
 grav_low = -5;
-runsp = 0; //How fast moving, but in alarm[0] is changed to the actual one
+
+//Prop
+runsp = 2.5; //How fast moving
 dodgesp = 4;
 dodgedist = 100;
 
+//Cooldowns
+startingTime = 3; //3s
+dodgeCD = 3; 
+if(oCooldown.startingTimer == -1){
+	oCooldown.startingTimer = startingTime * room_speed;
+}
 
 //Scripts
 playerCharScript[PLAYERSTATE.HUB] = -1;
