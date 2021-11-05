@@ -5,6 +5,7 @@ state = PLAYERSTATE.STARTING;
 lastState = state;
 canRun = false;
 image_speed = 0;
+charType = -1;
 
 //Movement speeds up and down
 hsp = 0;
@@ -22,26 +23,19 @@ grav_low = -5;
 
 //Prop
 runsp = 2.5; //How fast moving
-dodgesp = 4;
-dodgedist = 100;
 
-//Cooldowns
-startingTime = 3; //3s
-dodgeCD = 3; 
-if(oCooldown.startingTimer == -1){
-	oCooldown.startingTimer = startingTime * room_speed;
-}
+canDodge = false;
+dodgeCD = 0; 
+dodgeAmmo = -1;
+canSkill = false;
+skillCD = 0;
+
 
 //Scripts
-playerCharScript[PLAYERSTATE.HUB] = -1;
+playerCharScript[PLAYERSTATE.HUB] = PlayerStateHub;
 playerCharScript[PLAYERSTATE.STARTING] = PlayerStateStarting;
 playerCharScript[PLAYERSTATE.RUNNING] = PlayerStateRunning;
 playerCharScript[PLAYERSTATE.JUMPING] = PlayerStateJumping;
-playerCharScript[PLAYERSTATE.LOCKED] = -1;
-playerCharScript[PLAYERSTATE.DODGE] = PlayerStateDodge;
+playerCharScript[PLAYERSTATE.LOCKED] = PlayerStateLocked;
+playerCharScript[PLAYERSTATE.DODGE] = -1;
 
-//Skins
-spriteRun = sCerberusRun;
-spriteIdle = sCerberusIdle;
-spriteJump = sCerberusJump;
-spriteDodge = sCerberusDodge;

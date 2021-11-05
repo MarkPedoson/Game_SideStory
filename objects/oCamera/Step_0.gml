@@ -1,21 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 //Following the target
-
-if (instance_exists(follow)){
+if (instance_exists(follow)) and (instance_exists(oRoomIsMainRun)){
 	xTo = follow.x;
 	x += (xTo - x);
 }
-/*else if(instance_exists(player)){
-	xTo = player.x;
-	x = xTo;
-}*/
-
-//Trying to get closer to the target, slowing down in the process
-//x += (xTo - x);
+else if (instance_exists(oRoomIsHub)){
+	x = 0;
+	y = 0;
+}
 
 //Update camera
 camera_set_view_pos(cam, x, y);
+
 
 if (instance_exists(player)){
 	with(player){

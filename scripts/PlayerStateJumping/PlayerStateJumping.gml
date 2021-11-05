@@ -5,10 +5,16 @@ function PlayerStateJumping(){
 	
 	//Once player collides switch back
 	if (place_meeting(x, y-1, oFloor) and !sign(grav_current)) 
-		or (place_meeting(x, y+1, oFloor) and sign(grav_current)) state = PLAYERSTATE.RUNNING;
+		or (place_meeting(x, y+1, oFloor) and sign(grav_current)) {
+			lastState = state;
+			state = PLAYERSTATE.RUNNING;
+		}
 	
 	//Dodge ability
 	PlayerInputDodge();
+	
+	//Skill ability
+	PlayerInputSkill();
 	
 	//Movement
 	hsp = runsp;

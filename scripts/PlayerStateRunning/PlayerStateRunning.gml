@@ -4,8 +4,13 @@ function PlayerStateRunning(){
 	sprite_index = spriteRun;
 	image_speed = 1;
 	
+	image_yscale = sign(grav_current);
+	
 	//Dodge ability
 	PlayerInputDodge();
+	
+	//Skill ability
+	PlayerInputSkill();
 	
 	//Switching gravity
 	PlayerInputGravity();

@@ -9,12 +9,14 @@ function PlayerInputGravity(){
 				if (!place_meeting(x, y+1, oFloor)) break;
 				grav_current = grav_up;
 				grav_prev = sign(grav_up);
+				lastState = state;
 				state = PLAYERSTATE.JUMPING;
 				break;
 			case -1:
 				if (!place_meeting(x, y-1, oFloor)) break;
 				grav_current = grav_down;
 				grav_prev = sign(grav_down);
+				lastState = state;
 				state = PLAYERSTATE.JUMPING;
 				break;
 		}

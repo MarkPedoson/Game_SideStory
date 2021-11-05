@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 79,
-  "bbox_top": 0,
-  "bbox_bottom": 77,
+  "bbox_left": 6,
+  "bbox_right": 78,
+  "bbox_top": 2,
+  "bbox_bottom": 75,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 80,
-  "height": 78,
+  "width": 81,
+  "height": 79,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"033684fb-6ac4-4ed5-93a5-037ac1fde51b","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"033684fb-6ac4-4ed5-93a5-037ac1fde51b","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"LayerId":{"name":"c9bb1fa8-5427-4a22-a68b-ed4875724233","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sSkillIconEdge","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","name":"033684fb-6ac4-4ed5-93a5-037ac1fde51b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a0d365b8-76c8-43ab-93af-4f375ae0fdfd","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a0d365b8-76c8-43ab-93af-4f375ae0fdfd","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"LayerId":{"name":"519b6c54-67dd-465d-95c8-37263ef5a7f7","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sSkillIconEdge","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","name":"a0d365b8-76c8-43ab-93af-4f375ae0fdfd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sSkillIconEdge","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fdc28043-2226-45d7-be22-0fc404c91873","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"033684fb-6ac4-4ed5-93a5-037ac1fde51b","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5993ba6a-5244-40c6-86f6-8de5eeb07e6b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a0d365b8-76c8-43ab-93af-4f375ae0fdfd","path":"sprites/sSkillIconEdge/sSkillIconEdge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c9bb1fa8-5427-4a22-a68b-ed4875724233","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"519b6c54-67dd-465d-95c8-37263ef5a7f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Main_run",
+    "path": "folders/Sprites/UI/Main_run.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSkillIconEdge",

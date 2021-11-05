@@ -13,6 +13,7 @@ function PlayerStateStarting(){
 	if (canRun){
 		global.countdownCreate = false;
 		oChasee.hsp = runsp;
+		lastState = state;
 		state = PLAYERSTATE.RUNNING;
 	}
 }

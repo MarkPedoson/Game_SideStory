@@ -1,16 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-var _c = oCooldown;
+var _c = global.iCD;
+var _p = global.currentPlayer;
 
 if (room_get_name(room) != "rStartScreen"){
 	//Player control
 	if (!global.gamePaused){
-		draw_sprite(sSkillIconEdge, 0, RESOLUTION_W/2 + 130, RESOLUTION_H - 100);
-		draw_sprite(sMovementIconEdge, 0, RESOLUTION_W/2 - 270, RESOLUTION_H - 100);
-	
+		if (instance_exists(oRoomIsMainRun)){
+			draw_sprite(sMovementIconEdge, 0, RESOLUTION_W/2 - 290, RESOLUTION_H - 90);
+			
+			//Skill Icon
+			SkillIconDraw(sCerberusSkillIcon,_c.skillCDTimer, _p.skillCD, RESOLUTION_W/2 + 130, RESOLUTION_H - 90, _c.skillAmmoCounter);
+			
+			//Dodge Icon
+			SkillIconDraw(sCerberusDodgeIcon, _c.dodgeCDTimer, _p.dodgeCD, RESOLUTION_W/2 + 225, RESOLUTION_H - 90, _c.dodgeAmmoCounter);
+			
+			
+		}
 	}
 
-	//Main run UI
+	//Main run UI 
 	if (instance_exists(oRoomIsMainRun)){
 		//Meant to countdown in the beginning
 		if (global.countdownCreate){

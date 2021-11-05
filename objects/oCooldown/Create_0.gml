@@ -1,4 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
 startingTimer = -1;
-currentChar = oPlayer;
+dodgeAmmoCounter = -1;
+dodgeCDTimer = 0;
+skillAmmoCounter = -1;
+skillCDTimer = 0;
