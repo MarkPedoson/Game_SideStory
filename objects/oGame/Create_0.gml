@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 global.currentPlayer = -1;
-
+global.currentChosenChar = -1;
 //Initialise
 randomize();
 global.gamePaused = false;
@@ -20,5 +20,6 @@ global.targetState = -1;
 global.checkpointX = -1;
 global.checkpointY = -1;
 global.prevPlayerChar = -1;
+global.targetRoom = -1;
 
 room_goto(rStartScreen);

@@ -10,7 +10,7 @@ function PlayerStateRunning(){
 	PlayerInputDodge();
 	
 	//Skill ability
-	PlayerInputSkill();
+	if (charType != PLAYERCHAR.FISHING) PlayerInputSkill();
 	
 	//Switching gravity
 	PlayerInputGravity();

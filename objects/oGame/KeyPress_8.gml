@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!global.gamePaused) and (instance_exists(oRoomIsMainRun)){
+if (!global.gamePaused) and (instance_exists(oRoomIsMainRun) or instance_exists(oRoomIsFishing)){
 	global.gamePaused = true;
 	with (all)
 			{

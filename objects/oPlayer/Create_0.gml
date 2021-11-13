@@ -29,6 +29,7 @@ dodgeCD = 0;
 dodgeAmmo = -1;
 canSkill = false;
 skillCD = 0;
+skillAmmo = -1;
 
 
 //Scripts
@@ -38,4 +39,5 @@ playerCharScript[PLAYERSTATE.RUNNING] = PlayerStateRunning;
 playerCharScript[PLAYERSTATE.JUMPING] = PlayerStateJumping;
 playerCharScript[PLAYERSTATE.LOCKED] = PlayerStateLocked;
 playerCharScript[PLAYERSTATE.DODGE] = -1;
+playerCharScript[PLAYERSTATE.SKILL] = -1;
 

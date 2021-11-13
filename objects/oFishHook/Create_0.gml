@@ -1,11 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
-
-charType = PLAYERCHAR.CERBERUS;
+charType = PLAYERCHAR.FISHING;
 
 //Prop
-runsp = 2.5; //How fast moving
+runsp = -2.5; //How fast moving
 //Char specific
 dodgesp = 4;
 dodgedist = 80;
@@ -13,9 +12,8 @@ dodgedist = 80;
 canDodge = true;
 dodgeCD = 3; 
 dodgeAmmo = 3;
-canSkill = true;
-skillAmmo = -1;
-skillCD = 2;
+canSkill = false;
+
 
 //Let's setup the cooldown
 var _c = global.iCD;
@@ -24,10 +22,9 @@ if (dodgeAmmo != -1) and (_c.dodgeAmmoCounter == -1) _c.dodgeAmmoCounter = dodge
 if (skillAmmo != -1) and (_c.skillAmmoCounter == -1) _c.skillAmmoCounter = skillAmmo;
 
 //Skins
-spriteRun = sCerberusRun;
-spriteIdle = sCerberusIdle;
-spriteJump = sCerberusJump;
-spriteDodge = sCerberusDodge;
+spriteRun = sFishHook;
+spriteIdle = sFishHook;
+spriteJump = sFishHook;
+spriteDodge = sFishHook;
 
-playerCharScript[PLAYERSTATE.DODGE] = PlayerStateDodgeCerberus;
-playerCharScript[PLAYERSTATE.SKILL] = PlayerStateSkillCerberus;
+playerCharScript[PLAYERSTATE.DODGE] = PlayerStateDodgeFishHook;

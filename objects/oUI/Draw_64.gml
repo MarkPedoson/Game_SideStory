@@ -6,7 +6,7 @@ var _p = global.currentPlayer;
 if (room_get_name(room) != "rStartScreen"){
 	//Player control
 	if (!global.gamePaused){
-		if (instance_exists(oRoomIsMainRun)){
+		if (instance_exists(oRoomIsMainRun) or instance_exists(oRoomIsFishing)){
 			draw_sprite(sMovementIconEdge, 0, RESOLUTION_W/2 - 290, RESOLUTION_H - 90);
 			
 			//Skill Icon
@@ -20,7 +20,7 @@ if (room_get_name(room) != "rStartScreen"){
 	}
 
 	//Main run UI 
-	if (instance_exists(oRoomIsMainRun)){
+	if (instance_exists(oRoomIsMainRun) or instance_exists(oRoomIsFishing)){
 		//Meant to countdown in the beginning
 		if (global.countdownCreate){
 			if (_c.startingTimer <= 180) 

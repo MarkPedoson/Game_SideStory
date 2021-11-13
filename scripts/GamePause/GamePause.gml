@@ -3,7 +3,7 @@
 function GamePause(){
 	//Pause the game
 	if (press) 
-		and (instance_exists(oRoomIsMainRun)) 
+		and ((instance_exists(oRoomIsMainRun)) or (instance_exists(oRoomIsFishing)))
 		and (point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0),
 		//draw_sprite(sPauseIcon, 0, RESOLUTION_W - 70, 10);
 			RESOLUTION_W - 70, 10, RESOLUTION_W - 70 + 67, 10 + 36))

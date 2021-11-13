@@ -15,7 +15,10 @@ function SpawnCharacter(_char, _location){
 		global.targetState = PLAYERSTATE.HUB;
 		global.countdownCreate = false;
 	}
-	else if (_location.room_type == "main_run") global.targetState = PLAYERSTATE.STARTING;
-	
-	room_goto(_location.room_name);
+	else if (_location.room_type == "main_run" 
+		or _location.room_type == "fish_run"){
+			global.targetState = PLAYERSTATE.STARTING;
+	}
+	global.targetRoom = _location.room_name;
+	room_goto(global.targetRoom);
 }
