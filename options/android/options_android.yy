@@ -12,7 +12,7 @@
   "option_android_package_company": "company",
   "option_android_package_product": "product",
   "option_android_arch_armv7": false,
-  "option_android_arch_x86": true,
+  "option_android_arch_x86": false,
   "option_android_arch_arm64": true,
   "option_android_arch_x86_64": false,
   "option_android_orient_portrait": false,
