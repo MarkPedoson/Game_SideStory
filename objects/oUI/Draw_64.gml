@@ -6,16 +6,28 @@ var _p = global.currentPlayer;
 if (room_get_name(room) != "rStartScreen"){
 	//Player control
 	if (!global.gamePaused){
-		if (instance_exists(oRoomIsMainRun) or instance_exists(oRoomIsFishing)){
+		//Main run UI
+		if (instance_exists(oRoomIsMainRun)){
+			//Gravity weapon
 			draw_sprite(sMovementIconEdge, 0, RESOLUTION_W/2 - 290, RESOLUTION_H - 90);
 			
 			//Skill Icon
-			SkillIconDraw(sCerberusSkillIcon,_c.skillCDTimer, _p.skillCD, RESOLUTION_W/2 + 130, RESOLUTION_H - 90, _c.skillAmmoCounter);
+			SkillIconDraw(_p.basicSkillIcon, _c.skillCDTimer, _p.skillCD, RESOLUTION_W/2 + 130, RESOLUTION_H - 90, _c.skillAmmoCounter);
 			
 			//Dodge Icon
-			SkillIconDraw(sCerberusDodgeIcon, _c.dodgeCDTimer, _p.dodgeCD, RESOLUTION_W/2 + 225, RESOLUTION_H - 90, _c.dodgeAmmoCounter);
+			SkillIconDraw(_p.dodgeSkillIcon, _c.dodgeCDTimer, _p.dodgeCD, RESOLUTION_W/2 + 225, RESOLUTION_H - 90, _c.dodgeAmmoCounter);
 			
 			
+		}
+		//Fishing run UI
+		if (instance_exists(oRoomIsFishing)){
+			//Gravity weapon
+			draw_sprite(sMovementIconEdge, 0, RESOLUTION_W/2 - 290, RESOLUTION_H - 90);
+			
+			//Skill icon is not used
+			
+			//Dodge icon
+			SkillIconDraw(_p.dodgeSkillIcon, _c.dodgeCDTimer, _p.dodgeCD, RESOLUTION_W/2 + 225, RESOLUTION_H - 90, _c.dodgeAmmoCounter);
 		}
 	}
 

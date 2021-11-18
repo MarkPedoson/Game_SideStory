@@ -5,7 +5,7 @@ function PlayerStateDodgeFishHook(){
 	
 	//Code for changing sprite index according to the traveling length
 
-	moveDistanceRemaining = max(0, moveDistanceRemaining - dodgesp);
+	moveDistanceRemaining = max(0, moveDistanceRemaining + dodgesp);
 	
 	var _totalFrames = sprite_get_number(sprite_index);  //How many frames is the roll
 	image_index = min(((1 - (moveDistanceRemaining / dodgedist)) * _totalFrames), _totalFrames - 1);
@@ -21,7 +21,7 @@ function PlayerStateDodgeFishHook(){
 	//Trying to cap gravity effect
 	if (sign(grav_current)) and (vsp > grav_high) vsp = grav_high;
 	else if (!sign(grav_current)) and (vsp < grav_low)  vsp = grav_low;
-	
+
 	//Collision
 	PlayerCollision();
 	

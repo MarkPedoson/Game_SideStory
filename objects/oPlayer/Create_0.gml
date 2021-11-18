@@ -21,6 +21,8 @@ grav_current = grav_down; //Gravity value put here
 grav_high = 5; //Gravity limit both up and down
 grav_low = -5;
 
+dodgeHeight = 1;
+
 //Prop
 runsp = 2.5; //How fast moving
 
@@ -30,6 +32,9 @@ dodgeAmmo = -1;
 canSkill = false;
 skillCD = 0;
 skillAmmo = -1;
+
+dodgeSkillIcon = -1;
+basicSkillIcon = -1;
 
 
 //Scripts

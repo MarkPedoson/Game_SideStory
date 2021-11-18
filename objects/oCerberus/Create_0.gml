@@ -9,6 +9,7 @@ runsp = 2.5; //How fast moving
 //Char specific
 dodgesp = 4;
 dodgedist = 80;
+dodgeHeight = -6;
 //Cooldowns
 canDodge = true;
 dodgeCD = 3; 
@@ -16,6 +17,9 @@ dodgeAmmo = 3;
 canSkill = true;
 skillAmmo = -1;
 skillCD = 2;
+
+dodgeSkillIcon = sCerberusDodgeIcon;
+basicSkillIcon = sCerberusSkillIcon;
 
 //Let's setup the cooldown
 var _c = global.iCD;

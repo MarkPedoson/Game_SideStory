@@ -22,4 +22,6 @@ global.checkpointY = -1;
 global.prevPlayerChar = -1;
 global.targetRoom = -1;
 
+global.currentCheckpoint = -1;
+
 room_goto(rStartScreen);

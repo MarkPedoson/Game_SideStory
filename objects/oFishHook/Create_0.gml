@@ -6,14 +6,17 @@ charType = PLAYERCHAR.FISHING;
 //Prop
 runsp = -2.5; //How fast moving
 //Char specific
-dodgesp = 4;
+dodgesp = -6;
 dodgedist = 80;
+dodgeHeight = 1;
 //Cooldowns
 canDodge = true;
 dodgeCD = 3; 
-dodgeAmmo = 3;
+dodgeAmmo = 2;
 canSkill = false;
 
+dodgeSkillIcon = -1;
+basicSkillIcon = -1;
 
 //Let's setup the cooldown
 var _c = global.iCD;

@@ -23,7 +23,8 @@ if (instance_exists(player)){
 			or (x > other.x + RESOLUTION_W + 10)
 			or (y < other.y)
 			or (y > RESOLUTION_H + 10){
-				room_restart();
+				RespawnCharacter();
+				//room_restart();
 		}
 	}
 }
