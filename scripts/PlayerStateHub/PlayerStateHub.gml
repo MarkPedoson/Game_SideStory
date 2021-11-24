@@ -5,7 +5,7 @@ function PlayerStateHub(){
 	image_speed = 0.5;
 	hsp = 0;
 	
-	PlayerInputHub();
+	//PlayerInputHub();
 	
 	//Collision
 	PlayerCollision();

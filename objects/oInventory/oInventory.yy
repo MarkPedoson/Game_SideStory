@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPortal",
-    "path": "sprites/sPortal/sPortal.yy",
+    "name": "sInventory",
+    "path": "sprites/sInventory/sInventory.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Environment",
-    "path": "folders/Objects/Environment.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPortal",
+  "name": "oInventory",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},"order":6,},
     {"id":{"name":"sExitButton","path":"sprites/sExitButton/sExitButton.yy",},"order":7,},
     {"id":{"name":"oFishHook","path":"objects/oFishHook/oFishHook.yy",},"order":0,},
     {"id":{"name":"sSkillIconCDArea","path":"sprites/sSkillIconCDArea/sSkillIconCDArea.yy",},"order":4,},
@@ -87,6 +88,7 @@
     {"id":{"name":"sDestructibleFloor","path":"sprites/sDestructibleFloor/sDestructibleFloor.yy",},"order":5,},
     {"id":{"name":"sCerberusIdle","path":"sprites/sCerberusIdle/sCerberusIdle.yy",},"order":2,},
     {"id":{"name":"sSkillIconCDAreaFlip","path":"sprites/sSkillIconCDAreaFlip/sSkillIconCDAreaFlip.yy",},"order":6,},
+    {"id":{"name":"sInventory","path":"sprites/sInventory/sInventory.yy",},"order":9,},
     {"id":{"name":"oHubBase","path":"objects/oHubBase/oHubBase.yy",},"order":2,},
     {"id":{"name":"FishHookStarting","path":"scripts/FishHookStarting/FishHookStarting.yy",},"order":1,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":0,},
